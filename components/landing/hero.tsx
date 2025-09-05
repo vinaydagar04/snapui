@@ -65,6 +65,8 @@ export function HeroSection() {
             <BrowseBlocksButton />
           </div>
         </motion.div>
+
+        <Features />
       </div>
     </div>
   );
