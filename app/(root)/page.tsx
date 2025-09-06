@@ -7,6 +7,7 @@ import AIInput_05 from "@/components/snapui/ai-input/ai-input-05";
 import AIInput_06 from "@/components/snapui/ai-input/ai-input-06";
 import AIInput_07 from "@/components/snapui/ai-input/ai-input-07";
 import AIInput_08 from "@/components/snapui/ai-input/ai-input-08";
+import Alert01 from "@/components/snapui/alert/alert-01";
 import Image from "next/image";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <AIInput_06 />
       <AIInput_07 />
       <AIInput_08 /> */}
+      <Alert01 />
     </main>
   );
 }
