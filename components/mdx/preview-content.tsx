@@ -10,10 +10,10 @@ import {
 } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, Copy, Check, CheckCheck, Terminal } from "lucide-react";
-import { copyComponent } from "@/lib/action";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
 import { OpenInV0Button } from "../open-in-v0-button";
+import { copyComponent } from "@/lib/action";
 
 export default function PreviewContent({
   link,

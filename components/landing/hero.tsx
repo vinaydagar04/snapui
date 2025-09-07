@@ -1,12 +1,42 @@
 "use client";
-import React from "react";
+
+import type React from "react";
+
 import Link from "next/link";
+import TailwindCSS from "@/components/icons/tailwindcss";
 import { motion } from "motion/react";
-import { Sparkles } from "lucide-react";
-import TailwindCSS from "../icons/tailwind-css";
-import { BrowseBlocksButton } from "../ui/browse-block";
+
+import {
+  PlaneTakeoff,
+  BarChart2,
+  Video,
+  AudioLines,
+  Globe,
+  Diamond,
+  Sparkles,
+  Code,
+  Layers,
+} from "lucide-react";
+import { Btn14 } from "../snapui/button/btn-14";
+import Btn03 from "../snapui/button/btn-03";
+import Input09 from "../snapui/input/input-09";
+import AIInput_04 from "../snapui/ai-input/ai-input-04";
+
+import Card08 from "../snapui/card/card-08";
 import { BrowseComponentsButton } from "../ui/browse-button";
+
+import Card02 from "../snapui/card/card-02";
+import { BrowseBlocksButton } from "../ui/browse-block";
 import Features from "./features";
+
+interface Action {
+  id: string;
+  label: string;
+  icon: React.ReactNode;
+  description?: string;
+  short?: string;
+  end?: string;
+}
 
 export function HeroSection() {
   return (
@@ -84,7 +114,7 @@ export function HeroSection() {
             <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
               {"<Card/>"}
             </span>
-            {/* <Card08 href="/docs/components/card" /> */}
+            <Card08 href="/docs/components/card" />
           </div>
 
           {/* Action Search Bar */}
@@ -96,7 +126,7 @@ export function HeroSection() {
                             actions={allActions}
                             defaultOpen={true}
                         /> */}
-            {/* <Card02 /> */}
+            <Card02 />
           </div>
         </motion.div>
 
@@ -112,7 +142,7 @@ export function HeroSection() {
           </span>
           {/* <AIInput_04 /> */}
           <div className="w-full h-48 rounded-xl border border-zinc-200 dark:border-zinc-800 flex items-center justify-center">
-            {/* <AIInput_04 /> */}
+            <AIInput_04 />
           </div>
         </motion.div>
 
@@ -130,10 +160,10 @@ export function HeroSection() {
             </span>
             <div className="w-full h-48 rounded-xl  border border-zinc-200 dark:border-zinc-800 flex flex-col items-center justify-center gap-3">
               <Link href="/docs/components/button">
-                {/* <Btn14 label="Bring me" className=" w-42 py-5" /> */}
+                <Btn14 label="Bring me" className=" w-42 py-5" />
               </Link>
               <Link href="/docs/components/button">
-                {/* <Btn03 className=" w-42 py-5" /> */}
+                <Btn03 className=" w-42 py-5" />
               </Link>
             </div>
           </div>
@@ -143,7 +173,9 @@ export function HeroSection() {
             <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
               Input
             </span>
-            <Link href="/docs/components/input">{/* <Input09 /> */}</Link>
+            <Link href="/docs/components/input">
+              <Input09 />
+            </Link>
           </div>
         </motion.div>
       </div>
