@@ -7,8 +7,8 @@ import {
 } from "fumadocs-ui/page";
 import { notFound } from "next/navigation";
 import defaultMdxComponents from "fumadocs-ui/mdx";
-import { PreviewClient } from "@/components/mdx/preview-client";
 import { Preview } from "@/components/mdx/preview";
+import { PreviewClient } from "@/components/mdx/preview-client";
 
 export default async function Page(props: {
   params: Promise<{ slug?: string[] }>;
